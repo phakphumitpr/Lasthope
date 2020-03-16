@@ -49,13 +49,13 @@ class Login extends CI_Controller {
            if ($result1->num_rows() > 0){
             $data  = $result1->row_array();
             $id    = $data['monk_id'];
-            $mem_username  = $data['monk_username'];
-            $mem_password  = $data['monk_password'];
+            $member_username  = $data['monk_username'];
+            $member_password  = $data['monk_password'];
             $level = $data['level_id'];
             $sess  = array(
                 'monk_id'        => $id,
-                'monk_username'  => $mem_username,
-                'monk_password'  => $mem_password,
+                'monk_username'  => $member_username,
+                'monk_password'  => $member_password,
                 'level_id'       => $level,
                 'logged_in'      => true
             );
@@ -90,13 +90,13 @@ class Login extends CI_Controller {
            // exit;
            $data  = $result->row_array();
            $id    = $data['member_id'];
-           $mem_username  = $data['member_username'];
-           $mem_password  = $data['member_password'];
+           $member_username  = $data['member_username'];
+           $member_password  = $data['member_password'];
            $level = $data['level_id'];
            $sess  = array(
                'member_id'        => $id,
-               'member_username'  => $mem_username,
-               'member_password'  => $mem_password,
+               'member_username'  => $member_username,
+               'member_password'  => $member_password,
                'level_id'         => $level,
                'logged_in'        => true
            );
@@ -132,7 +132,11 @@ class Login extends CI_Controller {
      }
   }
 
-    
+  public function Logout()
+  {
+      $this->session->sess_destroy();
+      redirect('Login');
+}
 	
 
 
