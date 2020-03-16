@@ -23,14 +23,7 @@ class Homepage_model extends CI_Model{
                 (
                     'member_username'  => $this->input->post('member_username'),
                     'member_password'  => $this->input->post('member_password'),
-<<<<<<< HEAD
                     'member_name'      => $this->input->post('member_name'),
-=======
-                    
-                    'member_name'      => $this->input->post('member_name'),
-                   
-                    
->>>>>>> 3db60a7d5d3d981b19179bfb174bf1edf629b702
                     'level_id'     => '6'
 
                 );
