@@ -182,7 +182,7 @@ class Admin_model extends CI_Model{
     public function readm($monk_id) 
     {
     $this->db->select('*');
-    $this->db->from('tb_monk');
+    $this->db->from('monk');
     $this->db->where('monk_id',$monk_id);
     $query = $this->db->get();
     if($query->num_rows()>0)
