@@ -222,7 +222,7 @@ class Admin_model extends CI_Model{
 
     public function deletekeeper($member_id) // ลบสมาชิก
     {
-        $query =  $this->db->delete('member',array('mem_id'=>$member_id));
+        $query =  $this->db->delete('member',array('member_id'=>$member_id));
         if($query){
             echo "<script>"; 
             echo "alert('ลบข้อมูลสำเร็จ');";
