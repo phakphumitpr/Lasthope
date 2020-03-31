@@ -1,10 +1,10 @@
 <?php
 class Login_model extends CI_Model{
  
-   public function Member($member_username,$member_password)
+   public function Member($mem_username,$mem_password)
     {
-       $this->db->where('member_username',$member_username);
-       $this->db->where('member_password',$member_password);
+       $this->db->where('mem_username',$mem_username);
+       $this->db->where('mem_password',$mem_password);
        $result = $this->db->get('member');
        return $result;
 
