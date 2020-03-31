@@ -100,8 +100,8 @@
       <input type="text" placeholder="Enter Name" name="member_name" required>
       <hr>
       <div class="clearfix">
-        <button type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
+        <button type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">ยกเลิก</button>
+        <button type="submit" class="signupbtn">ยืนยัน</button>
       </div>
     </div>
   </form>
@@ -116,13 +116,13 @@
     </div>
 
     <div class="container">
-      <label><b>Username</b></label>
+      <label><b>ชื่อผู้ใช้งาน</b></label>
       <input type="text" placeholder="Enter Username" name="member_username" required>
 
-      <label><b>Password</b></label>
+      <label><b>รหัสผ่าน</b></label>
       <input type="password" placeholder="Enter Password" name="member_password" required>
       <hr>
-      <button type="submit" class="signupbtn">Login</button>
+      <button type="submit" class="signupbtn">ยืนยัน</button>
     </div>
   </form>
 </div>
