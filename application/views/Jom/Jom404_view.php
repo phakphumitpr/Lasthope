@@ -9,9 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Keeper</title>
-
- 
+  <title>Jom</title>
 
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url();?>./Sathu/dashboard/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,18 +17,6 @@
 
   <!-- Custom styles for this template-->
   <link href="<?php echo base_url();?>./Sathu/dashboard/css/sb-admin-2.min.css" rel="stylesheet">
-
-  <!--input -->
-    <!-- Icons font CSS-->
-    <link href="<?php echo base_url();?>./Sathu/input/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="<?php echo base_url();?>./Sathu/input/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-
-    <!-- Vendor CSS-->
-    <link href="<?php echo base_url();?>./Sathu/input/vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="<?php echo base_url();?>./Sathu/intput/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="<?php echo base_url();?>./Sathu/input/css/main.css" rel="stylesheet" media="all">  <!--input -->
 
 </head>
 
@@ -40,14 +26,14 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3"><?php echo $this->session->userdata('member_username');?></div>
+        <div class="sidebar-brand-text mx-3"><?php echo $this->session->userdata('mem_username');?></div>
       </a>
 
       <!-- Divider -->
@@ -56,7 +42,7 @@
       
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('Keeper/Keeperdash');?>">
+        <a class="nav-link" href="<?php echo site_url('Jom/Jomdash');?>">
           <i class="fas fa-fw fa-home"></i>
           <span>หน้าหลัก</span></a>
       </li>
@@ -69,7 +55,7 @@
       
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('Keeper/Keepereditprofile');?>">
+        <a class="nav-link" href="<?php echo site_url('Jom/Jomeditprofile');?>">
           <i class="fas fa-fw fa-table"></i>
           <span>ข้อมูลส่วนตัว</span></a>
       </li>
@@ -77,28 +63,11 @@
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Divider -->
-        <hr class="sidebar-divider my-0">
-
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('Keeper/Keeperaddtype');?>">
+        <a class="nav-link" href="<?php echo site_url('Jom/Jomshowbooking');?>">
           <i class="fas fa-fw fa-table"></i>
-          <span>เพิ่มชนิดงาน</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-
-      <!-- Divider -->
-        <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('Keeper/Keeperaddamountmonk');?>">
-          <i class="fas fa-fw fa-table"></i>
-          <span>เพิ่มจำนวนพระ</span></a>
+          <span>จองนิมนต์พระ</span></a>
       </li>
 
       <!-- Divider -->
@@ -109,48 +78,9 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('Keeper/Keepermgmonk');?>">
-          <i class="fas fa-fw fa-table"></i>
-          <span>ข้อมูลพระ</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Divider -->
-        <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('Keeper/Keepercheckmonk');?>">
-          <i class="fas fa-fw fa-table"></i>
-          <span>การรับกิจนิมนต์พระ</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Divider -->
-        <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('Keeper/Keepermgbooking');?>">
-          <i class="fas fa-fw fa-table"></i>
-          <span>การจองนิมนต์พระ</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Divider -->
-        <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url('...');?>">
           <i class="fas fa-fw fa-table"></i>
-          <span>การจองศาลาวัด</span></a>
+          <span>....</span></a>
       </li>
 
       <!-- Divider -->
@@ -199,12 +129,15 @@
       <br>
       <br>
       <br>
-
       <br>
       <br>
       <br>
       <br>
 
+      <div class="error mx-auto" data-text="404">404</div>
+      <p class="lead text-gray-800 mb-5">Page Not Found</p>
+      <p class="lead text-gray-800 mb-5">ไม่พบหน้านี้ </p>
+    </div>
 
   </div>
   <!-- /.container-fluid -->

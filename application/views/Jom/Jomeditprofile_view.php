@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Keeper</title>
+  <title>Jom</title>
 
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url();?>./Sathu/dashboard/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -38,7 +38,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
@@ -48,129 +48,71 @@
         <div class="sidebar-brand-text mx-3"><?php echo $this->session->userdata('member_username');?></div>
       </a>
 
-       <!-- Divider -->
-       <hr class="sidebar-divider my-0">
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
 
       
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="<?php echo site_url('Keeper/Keeperdash');?>">
-    <i class="fas fa-fw fa-home"></i>
-    <span>หน้าหลัก</span></a>
-</li>
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo site_url('Jom/Jomdash');?>">
+          <i class="fas fa-fw fa-home"></i>
+          <span>หน้าหลัก</span></a>
+      </li>
 
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
 
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+      
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo site_url('Jom/Jomeditprofile');?>">
+          <i class="fas fa-fw fa-table"></i>
+          <span>ข้อมูลส่วนตัว</span></a>
+      </li>
 
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="<?php echo site_url('Keeper/Keepereditprofile');?>">
-    <i class="fas fa-fw fa-table"></i>
-    <span>ข้อมูลส่วนตัว</span></a>
-</li>
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
 
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo site_url('Jom/Jomshowbooking');?>">
+          <i class="fas fa-fw fa-table"></i>
+          <span>จองนิมนต์พระ</span></a>
+      </li>
 
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
 
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
 
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="<?php echo site_url('Keeper/Keeperaddtype');?>">
-    <i class="fas fa-fw fa-table"></i>
-    <span>เพิ่มชนิดงาน</span></a>
-</li>
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo site_url('...');?>">
+          <i class="fas fa-fw fa-table"></i>
+          <span>....</span></a>
+      </li>
 
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
 
+      <!-- Divider -->
+        <hr class="sidebar-divider my-0">
 
-<!-- Divider -->
-  <hr class="sidebar-divider my-0">
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo site_url('Login/Logout');?>">
+          <i class="fas fa-fw fa-lock"></i>
+          <span>ออกจากระบบ</span></a>
+      </li>
 
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="<?php echo site_url('Keeper/Keeperaddamountmonk');?>">
-    <i class="fas fa-fw fa-table"></i>
-    <span>เพิ่มจำนวนพระ</span></a>
-</li>
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
 
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
-
-
-  <!-- Divider -->
-  <hr class="sidebar-divider my-0">
-
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="<?php echo site_url('Keeper/Keepermgmonk');?>">
-    <i class="fas fa-fw fa-table"></i>
-    <span>ข้อมูลพระ</span></a>
-</li>
-
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
-
-<!-- Divider -->
-  <hr class="sidebar-divider my-0">
-
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="<?php echo site_url('Keeper/Keepercheckmonk');?>">
-    <i class="fas fa-fw fa-table"></i>
-    <span>การรับกิจนิมนต์พระ</span></a>
-</li>
-
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
-
-<!-- Divider -->
-  <hr class="sidebar-divider my-0">
-
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="<?php echo site_url('Keeper/Keepermgbooking');?>">
-    <i class="fas fa-fw fa-table"></i>
-    <span>การจองนิมนต์พระ</span></a>
-</li>
-
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
-
-<!-- Divider -->
-  <hr class="sidebar-divider my-0">
-
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="<?php echo site_url('...');?>">
-    <i class="fas fa-fw fa-table"></i>
-    <span>การจองศาลาวัด</span></a>
-</li>
-
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
-
-<!-- Divider -->
-  <hr class="sidebar-divider my-0">
-
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="<?php echo site_url('Login/Logout');?>">
-    <i class="fas fa-fw fa-lock"></i>
-    <span>ออกจากระบบ</span></a>
-</li>
-
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
-
-<!-- Divider -->
-<hr class="sidebar-divider d-none d-md-block">
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
 
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
@@ -188,24 +130,25 @@
 
   <!-- Begin Page Content -->
   <div class="container-fluid">
-<br>
+  <br>
       <!-- DataTales Example -->
       <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary">เพิ่มพระ</h4>
+              <h4 class="m-0 font-weight-bold text-primary">ข้อมูลส่วนตัว</h4>
             </div>
   </div>
   <!-- /.container-fluid -->
-  <?php echo form_open_multipart('Keeper/adding');?>
+
   <div class="card-body">
-                    <form action="<?php echo site_url('Keeper/adding'); ?>" class="from-horizontal" enctype="multipart/form-data">
-                        
-                        
-                        <div class="form-row">
+                    <form action="<?php echo site_url('Jom/Jomeditprofile1'); ?>" method="POST">
+                      
+                    <div class="form-row">
                             <div class="name">ชื่อผู้ใช้งาน</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="form-control" type="text" name="monk_username">
+                                    <input class="form-control" type="text" name="member_username"
+                                    readonly
+                                    value="<?php echo $edit->member_username;?>">
                                 </div>
                             </div>
                         </div>
@@ -213,7 +156,9 @@
                             <div class="name">รหัสผ่าน</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="form-control" type="text" name="monk_password">
+                                    <input class="form-control" type="text" name="member_password"
+                                    required
+                                    value="<?php echo $edit->member_password;?>">
                                 </div>
                             </div>
                         </div>
@@ -221,21 +166,20 @@
                             <div class="name">ชื่อ</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="form-control" type="text" name="monk_name">
+                                    <input class="form-control" type="text" name="member_name"
+                                    required
+                                    value="<?php echo $edit->member_name;?>">
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-						                <label for="exampleInputEmail1">
-							              อัพโหลดไฟล์ภาพ
-						                </label> <?php echo $this->session->flashdata('monk'); ?>
-						                <input type="file" name="image" id="image" >
-				                  	</div> 
                         <div>
-                            <button class="btn btn--radius-2 btn-primary" type="submit">ยืนยัน</button>
+                        <input type="hidden" name="member_id"   value="<?php echo $edit->member_id;?>"> 
+
+                            <button class="btn btn--radius-2 btn--red" type="submit">ยืนยัน</button>
                         </div>
                     </form>
                 </div>
+
 
 </div>
 <!-- End of Main Content -->

@@ -76,7 +76,35 @@
         <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
-      
+      <!-- Divider -->
+<hr class="sidebar-divider my-0">
+
+<!-- Nav Item - Charts -->
+<li class="nav-item">
+  <a class="nav-link" href="<?php echo site_url('Keeper/Keeperaddtype');?>">
+    <i class="fas fa-fw fa-table"></i>
+    <span>เพิ่มชนิดงาน</span></a>
+</li>
+
+<!-- Divider -->
+<hr class="sidebar-divider my-0">
+
+
+<!-- Divider -->
+  <hr class="sidebar-divider my-0">
+
+<!-- Nav Item - Charts -->
+<li class="nav-item">
+  <a class="nav-link" href="<?php echo site_url('Keeper/Keeperaddamountmonk');?>">
+    <i class="fas fa-fw fa-table"></i>
+    <span>เพิ่มจำนวนพระ</span></a>
+</li>
+
+<!-- Divider -->
+<hr class="sidebar-divider my-0">
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">

@@ -173,5 +173,39 @@ class Keeper extends CI_Controller {
 			}
 		}
 	
+
+		public function Keeperaddtype()
+		{
+			$data['list_category']=$this->Keeper_model->list_category();
+			$this->load->view('Keeper/Keeperaddtype_view',$data);
+		}
+
+		public function Keeperaddtype1() 
+    {
+            $this->Keeper_model->Keeperaddtype1();
+            redirect('Keeper/Keeperaddtype','refresh');
+	}
+
+
+		public function Keeperaddamountmonk()
+	{
+		$data['list_type']=$this->Keeper_model->list_type();
+		$this->load->view('Keeper/Keeperaddamountmonk_view',$data);
+	}
+
+	public function Keeperaddamountmonk1() 
+    {
+            $this->Keeper_model->Keeperaddamountmonk1();
+            redirect('Keeper/Keeperaddamountmonk','refresh');
+	}
+
+
+
+
+
+
+
+
+
 	
 }//สุดท้าย

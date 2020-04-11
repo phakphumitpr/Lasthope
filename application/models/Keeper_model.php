@@ -162,12 +162,117 @@ public function __construct(){
         return $query->result();
     }
 
-    public function insert_booking($data)
-    {
-        $this->db->insert('booking', $data);
-    }
+    
 
    
-   
+    public function list_category()
+    {
+        $query = $this->db->get('category');
+        return $query->result();
+    }
+
+
+
+    public function list_type()
+    {
+        $query = $this->db->get('type');
+        return $query->result();
+    }
+
+    public function Keeperaddtype1() // ตรวจการเพิ่มข้อมูลซ้ำ เช็คจาก username
+    
+    {
+        $type_name = $this->input->post('type_name');
+        //num rows exp
+        $this->db->select('type_name');
+        $this->db->where('type_name',$type_name);
+        $query = $this->db->get('type');
+        $num = $query->num_rows(); //เช็คว่ามีข้อมูลนี้อยู่ในตารางไหม
+        if($num > 0) // ถ้ามีมากกว่า 0 ขึ้นไป คือมีข้อมูลซ้ำ
+        {
+        echo "<script>"; // ถ้าซ้ำจะโชว์ตรงนี้
+        echo "alert('ชื่อชนิดงานซ้ำ กรุณาเพิ่มใหม่อีกครั้ง');";
+        echo "window.history.back();";
+        echo "</script>";
+
+        }else{ // ถ้าไม่ซ้ำให้เพิ่มข้อมูลเข้าไปปกติ
+
+                $data = array
+                (
+                    'type_name'  => $this->input->post('type_name'),
+                    'category_id'  => $this->input->post('category_id'),
+                    
+                   
+
+                );
+                $query=$this->db->insert('type',$data);
+                if($query)
+                {
+                echo "<script>"; 
+                echo "alert('เพิ่มข้อมูลสำเร็จ');";
+
+                echo "</script>";
+                }else{
+                echo "<script>";
+                echo "alert('เพิ่มข้อมูลไม่สำเร็จ');";
+
+                echo "</script>";
+                    }
+
+            }
+    }
+
+
+    public function Keeperaddamountmonk1() // ตรวจการเพิ่มข้อมูลซ้ำ เช็คจาก username
+    
+    {
+        $amount = $this->input->post('amount');
+        //num rows exp
+        $this->db->select('amount');
+        $this->db->where('amount',$amount);
+        $query = $this->db->get('amountmonk');
+        $num = $query->num_rows(); //เช็คว่ามีข้อมูลนี้อยู่ในตารางไหม
+        if($num > 0) // ถ้ามีมากกว่า 0 ขึ้นไป คือมีข้อมูลซ้ำ
+        {
+        echo "<script>"; // ถ้าซ้ำจะโชว์ตรงนี้
+        echo "alert('จำนวนซ้ำ กรุณาเพิ่มใหม่อีกครั้ง');";
+        echo "window.history.back();";
+        echo "</script>";
+
+        }else{ // ถ้าไม่ซ้ำให้เพิ่มข้อมูลเข้าไปปกติ
+
+                $data = array
+                (
+                    'amount'  => $this->input->post('amount'),
+                    'type_id'  => $this->input->post('type_id'),
+                    
+                   
+
+                );
+                $query=$this->db->insert('amountmonk',$data);
+                if($query)
+                {
+                echo "<script>"; 
+                echo "alert('เพิ่มข้อมูลสำเร็จ');";
+
+                echo "</script>";
+                }else{
+                echo "<script>";
+                echo "alert('เพิ่มข้อมูลไม่สำเร็จ');";
+
+                echo "</script>";
+                    }
+
+            }
+    }
+
+
+
+
+
+
+
+
+
 
 } //ปีกสุดท้าย

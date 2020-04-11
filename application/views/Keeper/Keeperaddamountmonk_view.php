@@ -77,6 +77,7 @@
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
+      
       <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
@@ -104,6 +105,7 @@
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
+      
         <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
@@ -189,26 +191,46 @@
   <!-- Begin Page Content -->
   <div class="container-fluid">
 
-       <!-- 404 Error Text -->
-      <div class="text-center">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+  <div class="card-body">
+                    <form action="<?php echo site_url('Keeper/Keeperaddamountmonk1/'); ?>" method="POST">
 
-      <br>
-      <br>
-      <br>
-      <br>
+                    <div class="form-row">
+                            <div class="name">ชนิดงาน</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select class="form-control" id="type_id" name="type_id" required>
+                                        <option  value="">เลือกงาน</option>
+                                            <?php 
+                                                foreach ($list_type as $row)
+                                            {?>
+                                            <option  value="<?php echo $row->type_id; ?>"><?php echo $row->type_name; ?></option>
+                                            <?php
+                                            }?>
+                                          
+                                          </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
-  </div>
-  <!-- /.container-fluid -->
+                        <div class="form-row">
+                            <div class="name">จำนวน</div>
+                            <div class="value">
+                                <div class="form-group">
+                                  <input class="form-control" name="amount" id="amount" required style="width:100px;">
+                                </div>
+                            </div>
+                        </div>
 
+                        <div>
+                            <button class="btn btn--radius-2 btn--red" type="submit">ยืนยัน</button>
+                            
+                        </div>
+                    </form>
+                </div>
 
 
 </div>
