@@ -197,7 +197,7 @@
                        
 
                         <div class="form-row">
-                            <div class="name">เวลาเริ่ม</div>
+                            <div class="name">เวลาเริ่มงาน</div>
                             <div class="value">
                                 <div class="form-group">
                                   <input class="form-control" name="timestart" id="timestart"required style="width:150px;">
@@ -206,20 +206,20 @@
                         </div>
 
                         <div class="form-row">
-                            <div class="name">เวลาสิ้นสุด</div>
+                            <div class="name">เวลามารับพระ</div>
                             <div class="value">
                                 <div class="form-group">
-                                  <input class="form-control" name="timeend" id="timeend" required style="width:150px;">
+                                  <input class="form-control" name="timecomemonk" id="timecomemonk" required style="width:150px;">
                                 </div>
                             </div>
                         </div>
 
 
                         <div class="form-row">
-                            <div class="name">เวลามารับพระ</div>
+                            <div class="name">เวลาสิ้นสุด</div>
                             <div class="value">
                                 <div class="form-group">
-                                    <input class="form-control" id="timecomemonk"  name="timecomemonk" required style="width:150px;">
+                                    <input class="form-control" id="timeend"  name="timeend" required style="width:150px;">
                                 </div>
                             </div>
                         </div>

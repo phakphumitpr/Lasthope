@@ -144,7 +144,7 @@ public function __construct(){
 
     public function list_jubjub()
     {
-        $query = $this->db->query("SELECT `checkmonk_date`, COUNT(*) as total FROM checkmonk WHERE `mc_status`='1'GROUP BY `mc_date`");
+        $query = $this->db->query("SELECT `checkmonk_date`, COUNT(*) as total FROM checkmonk WHERE `statusmonk_id`='1'GROUP BY `checkmonk_date`");
             return $query->result();
     }
 

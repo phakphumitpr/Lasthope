@@ -133,7 +133,7 @@
                 <thead>
                     <tr role="row" class="info" bgcolor="#FFCCFF" align="center">
                       <th tabindex="0" rowspan="1" colspan="1" style="width:15%;"><h6>วันเดือนปีที่แจ้ง</h6></th>
-                      <th tabindex="0" rowspan="1" colspan="1" style="width:25%;"><h6>เวลามารับพระ | เวลาเริ่ม | เวลาสิ้นสุด</h6></th>
+                      <th tabindex="0" rowspan="1" colspan="1" style="width:25%;"><h6>เวลามารับพระ | เวลาเริ่มงาน | เวลาสิ้นสุด</h6></th>
                       <th tabindex="0" rowspan="1" colspan="1" style="width:25%;"><h6>วันเดือนปี | สถานที่</h6></th>
                       <th tabindex="0" rowspan="1" colspan="1" style="width:20%;"><h6>ประเภทงาน | จำนวนพระ</h6></th>
                       <th tabindex="0" rowspan="1" colspan="1" style="width:15%;"><h6>สถานะ</h6></th>  
